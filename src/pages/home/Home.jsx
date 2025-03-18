@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from './hero-section/Hero'
+import Category from './categories/Category'
 
 export default function Home() {
   return (
-    <div className="absolute z-0 top-[60px] w-full">
-      Hello world!
+    <div className="container">
+      <Hero/>
+      <Category/>
     </div>
   )
 }

@@ -1,0 +1,81 @@
+{
+    "categories": [
+      {
+        "name": "Тип питания",
+        "slug": "diet-type",
+        "items": [
+          {
+            "id": 1,
+            "name": "Веган",
+            "slug": "vegan",
+            "description": "Без продуктов животного происхождения"
+          },
+          {
+            "id": 2,
+            "name": "Вегетариан",
+            "slug": "vegetarian",
+            "description": "Без мяса, но могут быть яйца и молочные продукты"
+          },
+          {
+            "id": 3,
+            "name": "Обычное",
+            "slug": "regular",
+            "description": "Без ограничений"
+          }
+        ]
+      },
+      {
+        "name": "Кухни мира",
+        "slug": "cuisine",
+        "items": [
+          {
+            "id": 5,
+            "name": "Итальянская",
+            "slug": "italian"
+          },
+          {
+            "id": 6,
+            "name": "Русская",
+            "slug": "russian"
+          },
+          {
+            "id": 7,
+            "name": "Грузинская",
+            "slug": "georgian"
+          },
+          {
+            "id": 8,
+            "name": "Японская",
+            "slug": "japanese"
+          }
+        ]
+      },
+      {
+        "name": "Медицинские показания",
+        "slug": "medical",
+        "items": [
+          {
+            "id": 9,
+            "name": "Безглютеновое",
+            "slug": "gluten-free",
+            "description": "Исключает продукты содержащие глютен"
+          },
+          {
+            "id": 10,
+            "name": "Низкоуглеводное",
+            "slug": "low-carb"
+          },
+          {
+            "id": 11,
+            "name": "Диабетическое",
+            "slug": "diabetic"
+          },
+          {
+            "id": 12,
+            "name": "Безлактозное",
+            "slug": "lactose-free"
+          }
+        ]
+      }
+    ]
+  }

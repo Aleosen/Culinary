@@ -7,7 +7,7 @@ function App() {
 
   return (
     <Router>
-    <div className='relative z-0'>
+    <div className='relative z-0 md:min-w-screen md:min-h-screen'>
     <NavBar/>
       <Routes>
         <Route path="/" element={<Home />} />

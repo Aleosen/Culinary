@@ -4,13 +4,15 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
 }
 body, html, #root {
   min-width: 100vh;
   min-height: 100vh;
 }
 .container {
-  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  z-index: 0;
+  min-width: 100%;
+  
 }
