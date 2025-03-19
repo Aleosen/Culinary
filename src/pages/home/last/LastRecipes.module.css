@@ -1,0 +1,16 @@
+.item-container {
+    animation: anim 2s ease;
+}
+.item-container:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+        translate: -10px;
+    } 100% {
+        opacity: 1;
+        translate: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    border-top: 1px solid gray;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    background-color: white;
+  }
+  .mobile-dropdown-menu {
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+    background-color: white;
+  }
+  
+  .dropdown-menu.open {
+    max-height: 200px; /* Подберите под ваш контент */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .mobile-dropdown-menu.open {
+    max-height: 200px; /* Подберите под ваш контент */
+    opacity: 1;
+    transform: translateY(0);
+  }

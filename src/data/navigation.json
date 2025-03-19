@@ -1,0 +1,33 @@
+{
+    "navigation": [
+        {
+            "name": "Главная",
+            "url": "/"
+        },
+        {
+            "name": "Рецепты",
+            "url": "/recipes"
+        },
+        {
+            "name": "Добавить рецепт",
+            "url": "/add-recipe"
+        },
+        {
+            "name": "Советы",
+            "url": "/add-recipe"
+        },
+        {
+            "name": "Инфо",
+            "subsections": [
+                {
+                    "name": "О нас",
+                    "url": "/about"
+                },
+                {
+                    "name": "Соглашение",
+                    "url": "/agreement"
+                }
+            ]
+        }   
+    ]
+}

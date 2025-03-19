@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
 * {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-body, html, #root {
-  min-width: 100vh;
-  min-height: 100vh;
+html {
+  height: 100%;
 }
-.container {
-  position: absolute;
-  top: 80px;
-  z-index: 0;
-  min-width: 100%;
-  
+
+body, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }

@@ -6,16 +6,16 @@ import { Link } from 'react-router-dom'
 export default function Category() {
 
   return (
-    <section className='w-[calc(100%-20px)] lg:w-[1020px] min-h-screen mx-auto'>
-      <h1 className='text-2xl lg:text-4xl font-bold my-4'>Исследуйте категории</h1>
+    <section className='w-[calc(100%-20px)] lg:w-[1020px] min-h-screen mx-auto p-5'>
+      <h1 className='text-3xl lg:text-4xl font-bold my-4 mt-20'>Исследуйте категории</h1>
         { foodCategories.categories.map(category => (
         <div key={category.slug} className="relative block">
-        <h2 className='my-5 text-2xl font-bold'>{category.name}:</h2>
+        <h2 className='mt-20 mb-5 text-2xl font-bold'>{category.name}:</h2>
         <div className="flex overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pb-2">
         {
             category.items.map(item => (
-                <Link to={`/recipes/:${item.slug}`} key={item.id} className="shadow-md mx-5 relative cursor-pointer flex-shrink-0">
-                    <img className='w-50 h-50 object-cover  rounded-2xl' src={`/src/assets/images/categories/${item.slug}.jpg`} alt="img" />
+                <Link to={`/recipes/:${item.slug}`} key={item.id} className="shadow-md mx-5 relative cursor-pointer flex-shrink-0 rounded-2xl">
+                    <img loading='lazy' className='pointer-events-none w-50 h-50 object-cover  rounded-2xl' src={`/src/assets/images/categories/${item.slug}.jpg`} alt="img" />
                     <div className="absolute inset-0 bg-black/50  rounded-2xl"></div>
                     <span className={styles.category + ' text-[20px] text-white font-bold'}>{item.name}</span>
                 </Link>
