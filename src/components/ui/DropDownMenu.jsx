@@ -5,10 +5,10 @@ import './DropDownMenu.css'
   
 export default function DropDownMenu({buttonContent, items}) {
     const [MenuOpen, setMenuOpen] = useState(false)
-    const aboutMenuRef = useRef(null)
+    const MenuRef = useRef(null)
     useEffect(()=>{
         const handleClickOutside = (event)=>{
-            if(aboutMenuRef.current && !aboutMenuRef.current.contains(event.target)){
+            if(MenuRef.current && !MenuRef.current.contains(event.target)){
               setMenuOpen(false)
             }
         }
@@ -18,7 +18,7 @@ export default function DropDownMenu({buttonContent, items}) {
         }
   }, [])
   return (
-    <div className="relative"  ref={aboutMenuRef}>
+    <div className="relative"  ref={MenuRef}>
         <button onClick={()=>{setMenuOpen(!MenuOpen)}} className={` text-gray-600 hover:text-orange-600 cursor-pointer`}>
             {buttonContent}
         </button>

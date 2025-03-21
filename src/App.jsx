@@ -4,11 +4,13 @@ import Home from './pages/home/Home.jsx'
 import NavBar from './components/layout/navbar/NavBar.jsx';
 import Footer from './components/layout/footer/Footer.jsx';
 import Recipes from './pages/recipes/Recipes.jsx';
+import ScrollToTop from './ScrollToTop.jsx';
 function App() {
 
 
   return (
     <Router>
+      <ScrollToTop/>
       <div className='flex flex-col min-h-screen'>
         <NavBar/>
         <main className='flex-1'> {/* Главный контент должен растягиваться */}

@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import Button from '../../common/Button'
 import DropDownMenu from '../../ui/DropDownMenu'
 import MobileDropDownMenu from '../../ui/MobileDropDownMenu'
+import { useLocation } from 'react-router-dom'
+
 export default function NavBar() {
     const [MenuOpen, setMenuOpen] = useState(false)
     const mobileMenuRef = useRef(null)
@@ -12,8 +14,8 @@ export default function NavBar() {
     const closeMenu = ()=>{
       setMenuOpen(false)
     }
-    
-    useEffect(() => {
+
+  useEffect(() => {
       const handleClickOutside = (event) => {
         if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target) && !toggleButtonRef.current?.contains(event.target)) {
           setMenuOpen(false);

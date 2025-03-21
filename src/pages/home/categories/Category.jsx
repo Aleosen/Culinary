@@ -14,7 +14,7 @@ export default function Category() {
         <div className="flex overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden pb-2">
         {
             category.items.map(item => (
-                <Link to={`/recipes/:${item.slug}`} key={item.id} className="shadow-md mx-5 relative cursor-pointer flex-shrink-0 rounded-2xl">
+                <Link to={`/recipes/:${item.slug}`} key={item.id} className={styles['item-container'] + " shadow-md mx-5 relative cursor-pointer flex-shrink-0 rounded-2xl"}>
                     <img loading='lazy' className='pointer-events-none w-50 h-50 object-cover  rounded-2xl' src={`/src/assets/images/categories/${item.slug}.jpg`} alt="img" />
                     <div className="absolute inset-0 bg-black/50  rounded-2xl"></div>
                     <span className={styles.category + ' text-[20px] text-white font-bold'}>{item.name}</span>

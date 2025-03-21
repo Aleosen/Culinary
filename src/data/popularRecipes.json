@@ -33,5 +33,145 @@
         "rating": 4.8,
         "saves": 2500,
         "url": "/pizza.jpg"
+    },
+    {
+        "name": "Спагетти Карбонара",
+        "time": "30 минут",
+        "rating": 4.5,
+        "saves": 1200,
+        "url": "/carbonara.jpg"
+    },
+    {
+        "name": "Куриный суп с лапшой",
+        "time": "1 час",
+        "rating": 4.7,
+        "saves": 950,
+        "url": "/soup.jpg"
+    },
+    {
+        "name": "Шоколадный торт",
+        "time": "1 час 30 минут",
+        "rating": 4.9,
+        "saves": 2100,
+        "url": "/cake.jpg"
+    },
+    {
+        "name": "Салат Цезарь",
+        "time": "20 минут",
+        "rating": 4.6,
+        "saves": 1800,
+        "url": "/caesar.jpg"
+    },
+    {
+        "name": "Пицца Маргарита",
+        "time": "40 минут",
+        "rating": 4.8,
+        "saves": 2500,
+        "url": "/pizza.jpg"
+    },
+    {
+        "name": "Спагетти Карбонара",
+        "time": "30 минут",
+        "rating": 4.5,
+        "saves": 1200,
+        "url": "/carbonara.jpg"
+    },
+    {
+        "name": "Куриный суп с лапшой",
+        "time": "1 час",
+        "rating": 4.7,
+        "saves": 950,
+        "url": "/soup.jpg"
+    },
+    {
+        "name": "Шоколадный торт",
+        "time": "1 час 30 минут",
+        "rating": 4.9,
+        "saves": 2100,
+        "url": "/cake.jpg"
+    },
+    {
+        "name": "Салат Цезарь",
+        "time": "20 минут",
+        "rating": 4.6,
+        "saves": 1800,
+        "url": "/caesar.jpg"
+    },
+    {
+        "name": "Пицца Маргарита",
+        "time": "40 минут",
+        "rating": 4.8,
+        "saves": 2500,
+        "url": "/pizza.jpg"
+    },
+    {
+        "name": "Спагетти Карбонара",
+        "time": "30 минут",
+        "rating": 4.5,
+        "saves": 1200,
+        "url": "/carbonara.jpg"
+    },
+    {
+        "name": "Куриный суп с лапшой",
+        "time": "1 час",
+        "rating": 4.7,
+        "saves": 950,
+        "url": "/soup.jpg"
+    },
+    {
+        "name": "Шоколадный торт",
+        "time": "1 час 30 минут",
+        "rating": 4.9,
+        "saves": 2100,
+        "url": "/cake.jpg"
+    },
+    {
+        "name": "Салат Цезарь",
+        "time": "20 минут",
+        "rating": 4.6,
+        "saves": 1800,
+        "url": "/caesar.jpg"
+    },
+    {
+        "name": "Пицца Маргарита",
+        "time": "40 минут",
+        "rating": 4.8,
+        "saves": 2500,
+        "url": "/pizza.jpg"
+    },
+    {
+        "name": "Спагетти Карбонара",
+        "time": "30 минут",
+        "rating": 4.5,
+        "saves": 1200,
+        "url": "/carbonara.jpg"
+    },
+    {
+        "name": "Куриный суп с лапшой",
+        "time": "1 час",
+        "rating": 4.7,
+        "saves": 950,
+        "url": "/soup.jpg"
+    },
+    {
+        "name": "Шоколадный торт",
+        "time": "1 час 30 минут",
+        "rating": 4.9,
+        "saves": 2100,
+        "url": "/cake.jpg"
+    },
+    {
+        "name": "Салат Цезарь",
+        "time": "20 минут",
+        "rating": 4.6,
+        "saves": 1800,
+        "url": "/caesar.jpg"
+    },
+    {
+        "name": "Пицца Маргарита",
+        "time": "40 минут",
+        "rating": 4.8,
+        "saves": 2500,
+        "url": "/pizza.jpg"
     }
 ]

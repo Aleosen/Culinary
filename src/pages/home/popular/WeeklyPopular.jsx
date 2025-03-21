@@ -33,13 +33,13 @@ export default function WeeklyPopular() {
 
     const nextSlide = () => {
         setCurrentIndex(prev => 
-        prev === popularRecipes.length - 1 ? 0 : prev + 1
+        prev === 5 - 1 ? 0 : prev + 1
         );
     };
 
     const prevSlide = () => {
         setCurrentIndex(prev => 
-        prev === 0 ? popularRecipes.length - 1 : prev - 1
+        prev === 0 ? 5 - 1 : prev - 1
         );
     };
     useEffect(() => {
@@ -64,10 +64,10 @@ export default function WeeklyPopular() {
         className="flex transition-transform duration-300"
         style={{ 
           transform: `translateX(-${currentIndex * 100}%)`,
-          width: `${popularRecipes.length * 100}%`
+          width: `${5 * 100}%`
         }}
       >
-        {popularRecipes.map((item, index) => (
+        {popularRecipes.slice(0, 5).map((item, index) => (
           <div 
             key={index}
             className="w-full flex-shrink-0"
@@ -75,7 +75,7 @@ export default function WeeklyPopular() {
           >
             {/* Контент слайда */}
             <div className="relative mx-2 p-4 bg-white rounded-lg shadow-md"
-                style={{ width: `${100/popularRecipes.length-1}%`}}
+                style={{ width: `${100/5-1}%`}}
                 onClick={handleSlideClick}
                 onMouseEnter={()=>setAutoPlay(false)}
                 onMouseLeave={()=>setAutoPlay(true)}>
@@ -113,11 +113,11 @@ export default function WeeklyPopular() {
       </button>
       <button 
         onClick={()=> {nextSlide(); handleManualNavigation()}}
-        className="cursor-pointer absolute right-5 lg:right-10 top-1/2 -translate-y-1/2 bg-white/80 py-2 px-4 rounded-full shadow-lg hover:bg-white  hover:py-3 hover:px-5">
+        className="cursor-pointer absolute lg:right-10 top-1/2 -translate-y-1/2 bg-white/80 py-2 px-4 rounded-full shadow-lg hover:bg-white  hover:py-3 hover:px-5">
         &rsaquo;
       </button>
       <div className="flex justify-center space-x-2 mt-4">
-        {popularRecipes.map((_, index) => (
+        {popularRecipes.slice(0,5).map((_, index) => (
           <button
             key={index}
             onClick={() => {setCurrentIndex(index); handleManualNavigation()}}

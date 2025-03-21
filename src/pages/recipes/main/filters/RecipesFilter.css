@@ -1,0 +1,66 @@
+/* Стили для дорожки (track) */
+input[type="range"] {
+    -webkit-appearance: none; /* Убираем стандартные стили для WebKit (Chrome, Safari) */
+    width: 100%; /* Ширина ползунка */
+    height: 8px; /* Высота дорожки */
+    background: #4caf50; /* Цвет фона дорожки */
+    border-radius: 5px; /* Закругление углов дорожки */
+    outline: none; /* Убираем обводку при фокусе */
+  }
+  
+  /* Стили для ползунка (thumb) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартные стили для WebKit */
+    appearance: none;
+    width: 20px; /* Ширина ползунка */
+    height: 20px; /* Высота ползунка */
+    background: #4caf50; /* Цвет ползунка */
+    border-radius: 50%; /* Делаем ползунок круглым */
+    cursor: pointer; /* Курсор при наведении */
+  }
+  
+  /* Стили для Firefox */
+  input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Стили для дорожки в Firefox */
+  input[type="range"]::-moz-range-track {
+    background: #ddd;
+    border-radius: 5px;
+    height: 8px;
+  }
+  
+  /* Стили для Microsoft Edge и IE */
+  input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: #4caf50;
+    border-radius: 5px;
+  }
+  .filter-menu {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+  }
+  
+  .filter-menu.open {
+    max-height: 1000px; /* Значение должно быть больше максимальной высоты контента */
+    opacity: 1;
+    transform: translateY(0);
+    overflow: visible;
+  }
