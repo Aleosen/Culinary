@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import foodCategories from '../../../../data/categories.json'
 import Button from '../../../../components/common/Button'
-import InputDropDown from '../../../../components/ui/InputDropDown'
+import InputDropDown from '../../../../components/ui/DropDowns/InputDropDown'
 import './RecipesFilter.css'
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";

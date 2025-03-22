@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import Logo from '../../../assets/images/Logo.jpg'
 import { motion } from 'framer-motion'
 import Button from '../../common/Button'
-import DropDownMenu from '../../ui/DropDownMenu'
-import MobileDropDownMenu from '../../ui/MobileDropDownMenu'
+import DropDownMenu from '../../ui/DropDowns/DropDownMenu'
+import MobileDropDownMenu from '../../ui/DropDowns/MobileDropDownMenu'
 import { useLocation } from 'react-router-dom'
 
 export default function NavBar() {

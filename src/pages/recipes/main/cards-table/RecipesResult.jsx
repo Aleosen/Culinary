@@ -2,7 +2,7 @@ import React from 'react'
 import Test from '../Test'
 import cards from '../../../../data/popularRecipes.json'
 import { useState } from 'react'
-import Card from '../../../../components/ui/Card'
+import Card from '../../../../components/ui/Card/Card'
 import './RecipesResult.css'
 
 

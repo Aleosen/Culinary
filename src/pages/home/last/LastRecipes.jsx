@@ -1,7 +1,7 @@
 import React from 'react'
 import recipes from '../../../data/popularRecipes.json'
 import Button from '../../../components/common/Button'
-import Card from '../../../components/ui/Card'
+import Card from '../../../components/ui/Card/Card'
 export default function LastRecipes() {
   return (
     <section className='w-[calc(100%-20px)] lg:w-[1020px] mx-auto p-5'>

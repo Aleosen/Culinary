@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Card.module.css'
-import Button from '../common/Button'
+import Button from '../../common/Button'
 export default function Card({name, time, rating, saves, url}) {
   return (
       <div className={styles['item-container']+" w-60 h-80 m-3 p-2"}>

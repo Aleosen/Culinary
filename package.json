@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.14",
+    "@tiptap/extension-text-align": "^2.11.5",
+    "@tiptap/extension-underline": "^2.11.5",
+    "@tiptap/react": "^2.11.5",
+    "@tiptap/starter-kit": "^2.11.5",
     "framer-motion": "^12.5.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
