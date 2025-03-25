@@ -8,8 +8,9 @@ import { FaBold, FaItalic, FaAlignLeft, FaAlignCenter, FaAlignRight } from 'reac
 import './TipTapRedactor.css'
 import React, { useState } from 'react'
 
-export default function TipTapRedactor() {
+export default function TipTapRedactor({ onChange, error }){
   const [imgMenu, setImgMenu] = useState(false)
+
     const editor = useEditor({
         extensions: [
           StarterKit.configure({
@@ -33,9 +34,11 @@ export default function TipTapRedactor() {
             allowBase64: true // Разрешить вставку base64
           }),
         ],
+        onUpdate: ({ editor }) => {
+          onChange(editor.getHTML());
+        },
         content: "",
       });
-
       const addImage = () => {
         const url = window.prompt('Введите URL изображения');
         if (url) {
@@ -58,10 +61,10 @@ export default function TipTapRedactor() {
           reader.readAsDataURL(file);
         }
       };
-
+      
       if (!editor) return null;
   return (
-        <div className="editor">
+        <div className={`editor ${error ? 'editor-error' : ''}`}>
           <div className="toolbar flex items-center mb-2">
             <button
               onClick={() => editor.chain().focus().toggleBold().run()}
@@ -124,7 +127,7 @@ export default function TipTapRedactor() {
               <span className='text-[18px]'>URL</span>
             </button>
 
-            <label className="upload-button">
+            <label className="upload-button hover:cursor-pointer hover:opacity-70">
               📁 Загрузить
               <input
                 type="file"
