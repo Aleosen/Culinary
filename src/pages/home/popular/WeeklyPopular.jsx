@@ -113,7 +113,7 @@ export default function WeeklyPopular() {
       </button>
       <button 
         onClick={()=> {nextSlide(); handleManualNavigation()}}
-        className="cursor-pointer absolute lg:right-10 top-1/2 -translate-y-1/2 bg-white/80 py-2 px-4 rounded-full shadow-lg hover:bg-white  hover:py-3 hover:px-5">
+        className="cursor-pointer absolute right-4 lg:right-10 top-1/2 -translate-y-1/2 bg-white/80 py-2 px-4 rounded-full shadow-lg hover:bg-white  hover:py-3 hover:px-5">
         &rsaquo;
       </button>
       <div className="flex justify-center space-x-2 mt-4">

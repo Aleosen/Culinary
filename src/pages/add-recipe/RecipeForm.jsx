@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TipTapRedactor from "../../components/ui/TipTapRedactor";
+import TipTapRedactor from "../../components/ui/Redactor/TipTapRedactor";
 
 export default function RecipeForm() {
   const [file, setFile] = useState(null);
@@ -41,8 +41,13 @@ export default function RecipeForm() {
     setError("");
     setFile(selectedFile);
   };
+  const handleSubmit = () => {
+    console.log('submit')
+  }
   return (
-    <form className="lg:w-3xl mx-auto shadow-lg p-2 lg:p-20">
+    <form 
+    onSubmit={handleSubmit}
+    className="lg:w-3xl mx-auto shadow-lg p-2 lg:p-20">
         <h1 className="text-3xl mb-5">Добавить рецепт</h1>
         <div className="flex flex-col mb-10">
             <label htmlFor="recipeName" className="mb-1">Название рецепта<span className="text-red-600">*</span></label>
@@ -81,6 +86,12 @@ export default function RecipeForm() {
         <label className="mb-1">Описание рецепта<span className="text-red-600">*</span></label>
         <TipTapRedactor/>
       </div>
+      <button 
+      type="submit"
+      className="w-full bg-orange-500 text-white py-3 rounded-lg hover:bg-orange-600 transition-colors"
+    >
+      Опубликовать рецепт 🍳
+    </button>
     </form>
   )
 }
